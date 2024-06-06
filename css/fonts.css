@@ -1,0 +1,484 @@
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Black.eot');
+    src: url('../fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Black.woff2') format('woff2'),
+        url('../fonts/Lato-Black.woff') format('woff'),
+        url('../fonts/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('../fonts/Lato-Hairline.eot');
+    src: url('../fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Hairline.woff2') format('woff2'),
+        url('../fonts/Lato-Hairline.woff') format('woff'),
+        url('../fonts/Lato-Hairline.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Light.eot');
+    src: url('../fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Light.woff2') format('woff2'),
+        url('../fonts/NotoSans-Light.woff') format('woff'),
+        url('../fonts/NotoSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-ExtraBold.eot');
+    src: url('../fonts/Bitter-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Bitter-ExtraBold.woff') format('woff'),
+        url('../fonts/Bitter-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Black.eot');
+    src: url('../fonts/Bitter-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Black.woff2') format('woff2'),
+        url('../fonts/Bitter-Black.woff') format('woff'),
+        url('../fonts/Bitter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.eot');
+    src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Black.eot');
+    src: url('../fonts/NotoSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Black.woff2') format('woff2'),
+        url('../fonts/NotoSans-Black.woff') format('woff'),
+        url('../fonts/NotoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.eot');
+    src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Medium.eot');
+    src: url('../fonts/Bitter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Medium.woff2') format('woff2'),
+        url('../fonts/Bitter-Medium.woff') format('woff'),
+        url('../fonts/Bitter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-ExtraLight.eot');
+    src: url('../fonts/Bitter-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Bitter-ExtraLight.woff') format('woff'),
+        url('../fonts/Bitter-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-ExtraLight.eot');
+    src: url('../fonts/NotoSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-ExtraLight.woff2') format('woff2'),
+        url('../fonts/NotoSans-ExtraLight.woff') format('woff'),
+        url('../fonts/NotoSans-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.eot');
+    src: url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Light.woff2') format('woff2'),
+        url('../fonts/Lato-Light.woff') format('woff'),
+        url('../fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Bold.eot');
+    src: url('../fonts/Bitter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Bold.woff2') format('woff2'),
+        url('../fonts/Bitter-Bold.woff') format('woff'),
+        url('../fonts/Bitter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Light.eot');
+    src: url('../fonts/Bitter-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Light.woff2') format('woff2'),
+        url('../fonts/Bitter-Light.woff') format('woff'),
+        url('../fonts/Bitter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Thin.eot');
+    src: url('../fonts/Bitter-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Thin.woff2') format('woff2'),
+        url('../fonts/Bitter-Thin.woff') format('woff'),
+        url('../fonts/Bitter-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-ExtraBold.eot');
+    src: url('../fonts/NotoSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-ExtraBold.woff2') format('woff2'),
+        url('../fonts/NotoSans-ExtraBold.woff') format('woff'),
+        url('../fonts/NotoSans-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-Regular.eot');
+    src: url('../fonts/Bitter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-Regular.woff2') format('woff2'),
+        url('../fonts/Bitter-Regular.woff') format('woff'),
+        url('../fonts/Bitter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Medium.eot');
+    src: url('../fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Medium.woff2') format('woff2'),
+        url('../fonts/NotoSans-Medium.woff') format('woff'),
+        url('../fonts/NotoSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Regular.eot');
+    src: url('../fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+        url('../fonts/NotoSans-Regular.woff') format('woff'),
+        url('../fonts/NotoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Bold.eot');
+    src: url('../fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+        url('../fonts/NotoSans-Bold.woff') format('woff'),
+        url('../fonts/NotoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/Bitter-SemiBold.eot');
+    src: url('../fonts/Bitter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bitter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Bitter-SemiBold.woff') format('woff'),
+        url('../fonts/Bitter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-SemiBold.eot');
+    src: url('../fonts/NotoSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/NotoSans-SemiBold.woff') format('woff'),
+        url('../fonts/NotoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Thin.eot');
+    src: url('../fonts/NotoSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NotoSans-Thin.woff2') format('woff2'),
+        url('../fonts/NotoSans-Thin.woff') format('woff'),
+        url('../fonts/NotoSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('../fonts/NunitoSans7pt-Black.eot');
+    src: url('../fonts/NunitoSans7pt-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NunitoSans7pt-Black.woff2') format('woff2'),
+        url('../fonts/NunitoSans7pt-Black.woff') format('woff'),
+        url('../fonts/NunitoSans7pt-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('../fonts/NunitoSans7pt-Medium.eot');
+    src: url('../fonts/NunitoSans7pt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NunitoSans7pt-Medium.woff2') format('woff2'),
+        url('../fonts/NunitoSans7pt-Medium.woff') format('woff'),
+        url('../fonts/NunitoSans7pt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff'),
+        url('../fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.eot');
+    src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('../fonts/NunitoSans7pt-ExtraBold.eot');
+    src: url('../fonts/NunitoSans7pt-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NunitoSans7pt-ExtraBold.woff2') format('woff2'),
+        url('../fonts/NunitoSans7pt-ExtraBold.woff') format('woff'),
+        url('../fonts/NunitoSans7pt-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.eot');
+    src: url('../fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff'),
+        url('../fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.eot');
+    src: url('../fonts/Poppins-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/Poppins-Thin.woff') format('woff'),
+        url('../fonts/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('../fonts/NunitoSans7pt-SemiBold.eot');
+    src: url('../fonts/NunitoSans7pt-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NunitoSans7pt-SemiBold.woff2') format('woff2'),
+        url('../fonts/NunitoSans7pt-SemiBold.woff') format('woff'),
+        url('../fonts/NunitoSans7pt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.eot');
+    src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff'),
+        url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff'),
+        url('../fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('../fonts/NunitoSans7pt-Light.eot');
+    src: url('../fonts/NunitoSans7pt-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/NunitoSans7pt-Light.woff2') format('woff2'),
+        url('../fonts/NunitoSans7pt-Light.woff') format('woff'),
+        url('../fonts/NunitoSans7pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraBold.eot');
+    src: url('../fonts/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraBold.woff') format('woff'),
+        url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.eot');
+    src: url('../fonts/Poppins-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff'),
+        url('../fonts/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-ExtraLight.eot');
+    src: url('NunitoSans7pt-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-ExtraLight.woff2') format('woff2'),
+        url('NunitoSans7pt-ExtraLight.woff') format('woff'),
+        url('NunitoSans7pt-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-Bold.eot');
+    src: url('NunitoSans7pt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-Bold.woff2') format('woff2'),
+        url('NunitoSans7pt-Bold.woff') format('woff'),
+        url('NunitoSans7pt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 7pt';
+    src: url('NunitoSans7pt-Regular.eot');
+    src: url('NunitoSans7pt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('NunitoSans7pt-Regular.woff2') format('woff2'),
+        url('NunitoSans7pt-Regular.woff') format('woff'),
+        url('NunitoSans7pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-ExtraLight.eot');
+    src: url('Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Poppins-ExtraLight.woff2') format('woff2'),
+        url('Poppins-ExtraLight.woff') format('woff'),
+        url('Poppins-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
