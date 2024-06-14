@@ -8,13 +8,20 @@
   --link-color: blue;
   --accent-color: #ff0000;
 
+  --input-color: #f4f4f4;
+  --border-color: #ddd;
+    --light-text-color: #777;
+
   --first-brand-color: #e6f0f8;
   --second-brand-color: #0152bc;
   --third-brand-color: #1b0f66;
   --fourth-brand-color: #ff6415;
+  --fifth-brand-color: #f3f7fb;
+
+  --transition: 300ms linear;
   
 
-  --main-font: 'Poppins';
+  --main-font:  'Noto Sans Regular';
   --title-font: 'Poppins Bold';
   --main-title-font: 'Poppins Black';
 

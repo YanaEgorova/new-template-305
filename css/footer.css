@@ -1,63 +1,82 @@
+.footer__wrapper {
+  background-color: var(--third-brand-color);
+}
 .footer {
-  padding: 3rem 0;
+  padding: 5rem 0 2.5rem;
 }
-.footer__title {
+.footer-title {
+  color: var(--fourth-brand-color);
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+  font-family: 'Poppins Medium';
+}
+.footer-contacts-block,
+.footer-policies-block {
   margin-bottom: 1rem;
-  font-size: 1.6rem;
-  font-family: var(--title-font);
 }
-.footer__icon {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  margin-right: 1rem;
+.footer-contacts-subblock {
+  padding-left: 2rem;
 }
-.footer__link,
-.footer .text {
-  font-size: 1.5rem;
+.footer-link {
+  color: var(--sub-text-color);
+  transition: all var(--transition);
+  font-size: 1.3rem;
+  font-family: 'Poppins Regular';
+}
+.footer-link-text {
+    color: var(--sub-text-color);
+  font-size: 1.3rem;
+  font-family: 'Poppins Regular';
+}
+.footer-link:hover {
+  color: var(--border-color);
+  text-decoration: underline;
+}
+.footer-sub-list li span {
+   color: var(--sub-text-color);
+   font-family: 'Poppins Bold';
+    font-size: 1.3rem;
+    display: block;
+}
+.footer-sub-list li {
   position: relative;
 }
-.footer__link::after {
+.footer-sub-list span ~ svg {
+  fill: var(--fourth-brand-color);
   display: block;
-  content: '';
-  bottom: -0.1rem;
-  left: 0;
+  width: 2rem;
+  height: auto;
   position: absolute;
-  height: 0.1rem;
-  width: 0;
-  background-color: var(--main-text-color);
-  transition: all 0.3s ease-in-out;
+  top: 0;
+  left: -2.2rem;
 }
-.text--mb {
-  margin-bottom: 2rem;
+.footer-sub-list .phone-span ~ svg,
+.footer-sub-list .address-span ~ svg {
+  width: 1.5rem;
 }
-
 .footer__span {
-  font-size: 1.4rem;
+   color: var(--sub-text-color);
+   font-family: 'Poppins Regular';
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
 }
-.footer .item:not(:last-child) {
-  margin-bottom: 1rem;
+.footer-top {
+  padding-bottom: 5rem;
 }
-
-.footer__block {
-  margin-bottom: 3rem;
-}
-.footer__block--rg {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 1024px) {
-  .footer__link:hover::after {
-    width: 100%;
-  }
-  .footer__policies {
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__block {
+ .footer-top {
+  border-bottom: .1rem solid var(--sub-text-color);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-contacts-block{
     margin-bottom: 0;
-  }
-  .footer__block--rg {
-    text-align: right;
-  }
+    width: 40%;
+}
+.footer-policies-block {
+    margin-bottom: 0;
+    width: 20%;
+}
 }

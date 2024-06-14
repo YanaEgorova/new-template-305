@@ -1,192 +1,193 @@
-.hero {
-  text-align: center;
-  padding: 10rem 0;
-}
-.hero .title {
-  max-width: 60rem;
-  line-height: 1;
-  margin: 0 auto 1rem;
-}
-.hero-block .text {
-  max-width: 30rem;
-  margin: 0 auto 2rem;
-}
-.hero-block {
-  margin-bottom: 8rem;
-}
-.contacts-list {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.contacts-span {
-  font-family: var(--title-font);
-  font-size: 1.6rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.question {
-  padding: 10rem 0;
+/* PHRASE START */
+.phrase__wrapper {
+  padding: 4rem 0;
+  background-color: var(--third-brand-color);
   text-align: center;
 }
-.question .sub-title {
-  margin-bottom: 8rem;
+.phrase-title {
+  color: var(--sub-text-color);
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  font-family: 'Poppins SemiBold';
+  letter-spacing: .1rem;
 }
-.question-list {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
+/* PHRASE END */
+/* QUESTION START */
+.question__wrapper {
+  background-color: var(--first-brand-color);
 }
-.question-sub-title {
-  font-family: var(--title-font);
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  display: block;
-  margin: 0 auto 0.5rem;
+.question, .policies {
+  padding: 4rem 0;
 }
-.question-item .text {
-  max-width: 60rem;
-  margin: 0 auto;
-}
-.arrow-btn-svg {
+.question input, .question-list {
   display: none;
 }
-@media screen and (min-width: 1440px) {
-  .hero .title {
-    color: var(--sub-text-color);
-    font-family: var(--main-font);
+.question-title, .policies-title {
+  text-transform: capitalize;
+  color: var(--third-brand-color);
+  font-size: 2.6rem;
+  font-family: 'Poppins SemiBold';
+  margin-bottom: 2rem;
+  line-height: 1;
+    text-align: center;
+}
+.policies-title {
+  font-size: 1.5rem;
+}
+.text-content {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.text-content div {
+  border-bottom: .3rem solid var(--sub-text-color);
+  padding-bottom: .5rem;
+}
+.text-content h3 {
     text-transform: capitalize;
-    max-width: 50rem;
-    margin-left: 0;
-    background: -webkit-linear-gradient(var(--second-brand-color), var(--third-brand-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .hero__wrapper,
-  .question__wrapper {
-    background: var(--fourth-brand-color);
-    background-image: url('../img/icons/noise.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .hero {
+  color: var(--third-brand-color);
+  font-size: 1.6rem;
+  font-family: 'Poppins SemiBold';
+  margin-bottom: 1rem;
+  padding: 1rem 1rem 0;
+}
+.text-content p {
+  background-color: var(--sub-text-color);
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+/* QUESTION END */
+/* POLICIES START */
+.policies__wrapper {
+  background-color: var(--first-brand-color);
+}
+.policies-block {
+  margin: 0 auto;
+  max-width: 61rem;
+  padding: 10rem 3rem 3rem;
+  background-image: url('../img/bg1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  position: relative;
+}
+.policies-block::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+.policies-block p {
+    color: var(--sub-text-color);
+    max-width: 32rem;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    position: relative;
+  
+}
+.policies-block a {
+  position: relative;
+  color: var(--second-brand-color);
+  font-size: 1.2rem;
+  font-family: 'Poppins SemiBold';
+  text-transform: uppercase;
+    padding: 1rem 3.3rem;
+    border: .2rem solid var(--fifth-brand-color);
+    border-radius: 4rem;
+}
+.policies-block a:hover {
+  text-decoration: underline;
+}
+/* POLICIES END */
+@media screen and (min-width: 1024px) {
+  /* PHRASE START */
+ .phrase__wrapper {
+  padding: 5rem 0;
+}
+.phrase-title {
+  font-size: 3.2rem;
+}
+/* PHRASE END */
+/* QUESTION START */
+.text-content h3 {
+  display: none;
+}
+.question-list {
+    display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  min-width: 40%;
+}
+.question-block {
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.text-content {
+    max-width: 100%;
+    margin: 0 ;
+}
+.question-list label {
+   transition: background-color var(--transition);
+}
+#first:checked ~ .question-list label.first,
+#second:checked ~ .question-list label.second,
+#third:checked ~ .question-list label.third{
+  background-color: var(--sub-text-color);
+}
+.question-list label span {
+   color: var(--third-brand-color);
+   font-family: 'Noto Sans SemiBold';
+   padding: .5rem 1.5rem;
+   font-size: 1.6rem;
+   display: block;
+   border-bottom: .3rem solid var(--sub-text-color);
+  
+   cursor: pointer;
+}
+.question-list label:hover  {
+  background-color: var(--sub-text-color);
+}
+.text-content div {
+  border: none;
+  padding: 0;
+}
+.text-content p {
+    background-color: transparent;
     padding: 0;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .hero .text,
-  .hero .btn,
-  .contacts-span {
-    color: var(--sub-text-color);
-    margin-left: 0;
-  }
-  .hero .btn {
-    border-color: var(--sub-text-color);
-    display: flex;
-    align-items: center;
-  }
-  .arrow-btn-svg {
-    display: block;
-    fill: var(--sub-text-color);
-    margin-left: 1rem;
-  }
-  .hero-block {
-    margin: 0;
-    width: 50%;
-    padding-left: 10rem;
-  }
-  .contacts-block {
-    width: 40%;
-  }
-  .contacts-list {
-    gap: unset;
-    border-left: 0.1rem solid var(--sub-text-color);
-  }
-  .contacts-item {
-    padding: 10rem 3rem;
-  }
-  .contacts-item:not(:last-child) {
-    border-bottom: 0.1rem solid var(--sub-text-color);
-  }
+    font-size: 1.4rem;
+    line-height: 2;
+}
+.question-block .text{
+  display: none;
+  min-height: 20rem;
+  height: 100%;
+  padding: 3rem;
+  background-color: var(--sub-text-color);
+}
 
-  .question__wrapper {
-    border-top: 0.1rem solid var(--sub-text-color);
-    border-bottom: 0.1rem solid var(--sub-text-color);
-  }
-  .question .sub-title,
-  .question .text,
-  .question-sub-title {
-    color: var(--sub-text-color);
-  }
-  .question {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    text-align: left;
-  }
-  .question-circles {
-    width: 40%;
-    position: relative;
-  }
-  .question-circles .first,
-  .question-circles .second,
-  .question-circles .third {
-    border-radius: 50%;
-    position: relative;
-    border: 0.2rem solid var(--third-brand-color);
-    margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 10px 0px var(--third-brand-color);
-    -moz-box-shadow: 0px 0px 10px 0px var(--third-brand-color);
-    box-shadow: 0px 0px 10px 0px var(--third-brand-color);
-  }
-  .question-circles .first {
-    width: 25rem;
-    height: 25rem;
-  }
-  .question-circles .second,
-  .question-circles .third {
-    width: 35rem;
-    height: 35rem;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-color: var(--second-brand-color);
-  }
-  .question-circles .second {
-    -webkit-box-shadow: 0px 0px 10px 0px var(--second-brand-color);
-    -moz-box-shadow: 0px 0px 10px 0px var(--second-brand-color);
-    box-shadow: 0px 0px 10px 0px var(--second-brand-color);
-  }
-  .question-circles .third {
-    border-color: var(--third-brand-color);
-    width: 45rem;
-    height: 45rem;
-  }
-  .question-circles .first::before,
-  .question-circles .second::before,
-  .question-circles .third::before {
-    display: block;
-    position: absolute;
-    content: 'now';
-    background: var(--fourth-brand-color);
-    color: var(--third-brand-color);
-    font-family: var(--title-font);
-    font-size: 1.6rem;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: -1.2rem;
-    padding: 0 0.5rem;
-  }
-  .question-circles .second::before {
-    content: 'it';
-    color: var(--second-brand-color);
-  }
-  .question-circles .third::before {
-    content: 'buy';
-  }
+#first:checked ~ .text-content .first,
+#second:checked ~ .text-content .second,
+#third:checked ~ .text-content .third {
+  display: block;
+}
+
+#second:checked ~ .text-content .first,
+#third:checked ~ .text-content .first{
+  display: none;
+}
+/* QUESTION END */
+/* POLICIES START */
+.policies-title {
+  font-size: 2.4rem;
+}
+/* POLICIES END */
+}
+@media screen and (min-width: 1440px) {
+ 
 }

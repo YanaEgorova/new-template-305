@@ -15,6 +15,7 @@ body {
   scroll-behavior: smooth;
   color: var(--main-text-color);
   font-family: var(--main-font);
+  font-size: 1.4rem;
 }
 ​img {
   max-width: 100%;
@@ -133,84 +134,37 @@ body.error-active .error__overlay {
 }
 .container {
   padding: 0 1.5rem;
-  max-width: 150rem;
+  max-width: 54rem;
   margin-left: auto;
   margin-right: auto;
 }
 .section {
   text-align: center;
 }
-/* LOGO HOVER START */
-.logo__box {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-}
-.logo {
-  font-size: 1.6rem;
-  font-family: var(--title-font);
-}
 
-/* LOGO HOVER END */
-
-.title {
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-family: var(--main-title-font);
-}
-.sub-title {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-family: var(--title-font);
-}
-.text {
-  font-size: 1.5rem;
-}
-.img {
-  width: 100%;
-  display: block;
-  max-width: 35rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 .btn {
   cursor: pointer;
-  font-size: 1.2rem;
-  margin: 0 auto;
-  position: relative;
-  text-decoration: none;
-  width: fit-content;
-  padding: 1.6rem 3rem;
-  letter-spacing: 0.1rem;
-  display: block;
-  text-transform: capitalize;
-  font-family: var(--title-font);
-  border: 0.2rem solid var(--main-text-color);
-  background-color: transparent;
-  color: var(--main-text-color);
-  transition: all 0.3s ease-in-out;
-  border-radius: 5rem;
+  font-size: 1.3rem;
+  line-height: 4.2rem;
+  background-color: gray;
+  font-family: 'Poppins SemiBold';
+  padding: 0 1.7rem;
+  color: var(--sub-text-color);
+  background-color: var(--fourth-brand-color);
+  transition: background-color var(--transition);
+} 
+.btn:hover {
+   background-color: var(--third-brand-color);
 }
-
-.bold {
-  text-decoration: underline;
+.dark-btn {
+  background-color: var(--third-brand-color);
+}
+.dark-btn:hover {
+  background-color: var(--fourth-brand-color);
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 2rem;
-  }
-  .sub-title {
-    font-size: 3rem;
-  }
-
-  .btn:hover {
-    transform: scale(1.1);
-  }
-
-  .title {
-    font-size: 6rem;
+    max-width: 128rem;
   }
 }

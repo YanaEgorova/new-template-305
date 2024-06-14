@@ -1,19 +1,8 @@
-.prod {
-    padding: 3rem 0;
-    max-width:70rem;
-    margin-left: auto;
-    margin-right: auto;
+.prod__wrapper {
+    padding-bottom: 5rem;
 }
-.prod .title {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.prod__title {
-    margin-bottom: 2rem;
-    font-size: 3rem;
-}
-.prod__img-box {
-    margin-bottom: 3rem;
+.prod__wrapper-body {
+    background-color: var(--first-brand-color);
 }
 .disable-btn {
     pointer-events: none;
@@ -21,134 +10,164 @@
 .disable-btn svg {
     opacity: 0.3;
 }
+.prod__img-box {
+    margin-bottom: 3rem;
+    background-color: var(--main-bg-color);
+    position: relative;
+    padding: 3rem;
+}
 .prod__img {
-    cursor: pointer;
-    margin-bottom: 2rem;
-    max-height: 35rem;
-    object-fit: contain;
+width: 100%;
+max-height: 49rem;
+object-fit: contain;
 }
-.prod__img-list {
+.prod__block {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.prod__block-right {
+    background-color: var(--fifth-brand-color);
+    padding: 2.5rem;
+}
+.prod__title {
+    color: var(--third-brand-color);
+    font-size: 2.6rem;
+    font-family: 'Poppins SemiBold';
+}
+.prod__block-right .header-stars {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: rgba(240, 218, 197, .3); */
-    padding: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
-}
-.prod__img-item:not(:last-child) {
-    margin-right: 2rem;
-}
-.prod__subimg {
-    cursor: pointer;
-    max-width: 10rem;
-    max-height: 25rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
 }
 .prod__price-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
-.prod__price, .prod__discount {
-    font-size: 3rem;
+.prod__price-box p {
+    font-family: 'Nunito Sans Bold';
+    font-size: 1.6rem;
 }
-
-.prod__discount {
-    color: var(--inactive);
-    margin-left: 2rem;
-    text-decoration: line-through;
-}
-.prod__text-box {
-    margin-bottom: 1rem;
+.prod__price-box span {
+    color: var(--fourth-brand-color);
+    font-family: 'Poppins Medium';
+    font-size: 2.2rem;
 }
 .prod__btns-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-    border-radius: 3rem;
-    /* background-color: var(--first-brand-color); */
-    border: .1rem solid var(--main-text-color);
 }
-.prod__btn {
-    width: 6rem;
-    height: 6rem;
-    padding: 2rem;
+.prod__btns-box span, .prod__size {
+    font-size: 1.1rem;
+    font-family: 'Poppins SemiBold';
 }
-.prod__btn-less {
-    border-radius: 3rem 0 0 3rem;
-    border-right: .1rem solid var(--main-text-color);
-}
-.prod__btn-more {
-    border-radius: 0 3rem 3rem 0;
-    border-left: .1rem solid var(--main-text-color);
+.prod__quantity {
+  border: .1rem solid var(--light-text-color);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  width: 6rem;
 }
 .prod__btn svg {
+    width: 2rem;
     fill: var(--main-text-color);
 }
-.prod__amount-span {
-    font-size: 3rem;
-    width: 4rem;
-    text-align: center;
+.prod__quantity div {
+    height: 4.5rem;
+    border-left: .1rem solid var(--light-text-color);
+    width: calc(50% - .3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-.prod__subtitle {
+.prod__amount-span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       width: calc(50% - .3rem); 
+         border-right: .1rem solid var(--light-text-color);
+}
+.prod__btn {
+    color: var(--light-text-color);
+    font-family: 'Poppins Bold';
+    font-size: 2rem;
+    line-height: .9;
+    transition: color var(--transition);
+    height: 50%;
+}
+.prod__btn:hover {
+    color: var(--fourth-brand-color);
+}
+.add__btn svg {
+    width: 2rem;
+    height: auto;
+     fill: var(--sub-text-color);
+}
+.add__btn {
+    background-color: var(--fourth-brand-color);
+    color: var(--sub-text-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Poppins Regular';
+    letter-spacing: .1rem;
+    line-height: 4.7rem;
+    padding: 0 1rem;
+    border-radius: .5rem;
+}
+.add__btn-box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     margin-bottom: 1rem;
 }
-.prod__text-block {
-    margin-bottom: 2rem;
+.prod__text-block p {
+    font-size: 1.3rem;
+    font-family: 'Noto Sans Regular';
+}
+.prod__select {
+    margin-bottom: 3rem;
+    display: inline;
+    background-color: transparent;
+    padding: 1rem;
+     border: .1rem solid var(--light-text-color);
+     border-radius: .7rem;
 }
 .prod__size {
-    font-size: 2rem;
-    margin-bottom: 1rem;
- }
- .prod__select {
-     display: block; 
-     font-size: 2rem;
-     width: 15rem;
-     outline: none;
- }
-
-
-.add__btn {
-    display: block;
-    width: 100%;
-    margin-bottom: 3rem;
-}
-.prod__text {
-    margin-bottom: 2rem;
+    display: inline;
+    margin-right: 1rem;
 }
 
-
-@media screen and (min-width: 1024px) {
-    .prod {
-        max-width: 100%;
-        padding: 10rem 0;
-    }
-    .prod .title {
-        text-align: left;
-    }
-    .prod__price-box, .prod__btns-box {
-        justify-content: flex-start;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .prod__block {
-        display: flex;
-    }
+@media screen and (min-width: 1440px) {
     .prod__img-box {
-        margin-bottom: 0;
-        margin-right: 5rem;
-        width: calc(48% - 5rem);
-    }
-    .prod__block-right {
-        width: 52%;
-    }
-  
+        margin: 0;
+        width: 50%;
+}
+.prod__block {
+    max-width: 100%;
+    display: flex;
+}
+.prod__block-right {
+    width: 50%;
+}
+.prod__price-box span {
+    font-size: 3.2rem;
+}
+.prod__btns-box span, .prod__size  {
+    font-size: 1.4rem;
+}
+.prod__quantity {
+    width: 8rem;
+}
+.add__btn-box {
+    gap: 1.5rem;
+}
+.add__btn {
+    padding: 0 3rem;
+    font-size: 1.5rem;
+}
+.prod__text-block p {
+    font-size: 1.5rem;
+}
 }

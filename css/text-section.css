@@ -1,5 +1,5 @@
 .text-section {
-  padding: 15rem 0;
+  padding: 5rem 0 15rem;
 }
 .text-section .container {
   position: relative;
@@ -7,17 +7,25 @@
 .text-section .text {
   margin-bottom: 1.5rem;
 }
-.text-section .title {
-  font-size: 6rem;
+.text-section .title, .shop-products-title {
+  font-family: 'Poppins SemiBold';
+  font-size: 1.9rem;
+  color: var(--third-brand-color);
   margin-bottom: 3rem;
+      border-bottom: .3rem solid var(--third-brand-color);
+}
+.shop-products-title {
+  text-align: left;
+  border: none;
 }
 .text-section .bold {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   text-decoration: none;
+  font-family: 'Poppins Bold';
 }
 .text-section .up {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .text-section .italic {
   font-style: italic;
@@ -52,8 +60,15 @@
 .text-section__mr {
   margin-right: 1rem;
 }
+.footer__icon {
+  fill: var(--fourth-brand-color);
+  width: 2rem;
+  height: auto;
+  margin-right: .5rem;
+}
 @media screen and (min-width: 768px) {
-  .text-section {
-    padding: 25rem 0;
-  }
+  .text-section .title, .shop-products-title {
+      font-size: 2.6rem;
+      padding-bottom: .5rem;
+}
 }
