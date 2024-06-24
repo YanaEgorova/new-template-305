@@ -5,6 +5,7 @@ import { dropdown } from './size-dropdown.js';
 export const productTemplate = (product, amount) => {
     var clothingSizes = ["XS", "S", "M", "L", "XL"];
   var ringSizes = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"];
+  var shoeSizes = ["4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
    
     return `
    <div class="prod__block js_prod__block" id="${product.id}">
@@ -82,6 +83,7 @@ export const productTemplate = (product, amount) => {
                
              ${product.type == "ring" ? dropdown(ringSizes, "Ring Size:") : ''}
        ${product.type == "clothing" ? dropdown(clothingSizes, "Clothing Size:") : ''}
+         ${product.type == "shoes" ? dropdown(shoeSizes, "Shoes Size:") : ''}
 
     <div class="prod__block-box">
      <div class="add__btn-box">

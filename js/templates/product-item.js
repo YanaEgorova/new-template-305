@@ -21,10 +21,16 @@ export const item = product => {
     </div>
     </div>
     <div class="product__btn-block">
-      <a href="product-page.html?id=${product.id}" class="products-btn btn--first" style="margin: ${
-    product.type == 'ring' || product.type == 'clothing' ? 'auto' : ''
-  }">product details</a>
-      ${product.type == 'ring' || product.type == 'clothing' ? '' : '<button class="products-btn js_add-to-cart">add to cart</button>'}
+
+
+    
+
+        <a href="product-page.html?id=${product.id}" class="products-btn btn--first" style="margin: ${product.type == "ring" || product.type == "clothing" || product.type == "shoes" ? 'auto' : ''}">product details</a>
+      ${
+        product.type == "ring" || product.type == "clothing" || product.type == "shoes" ? '' : '<button class="products-btn js_add-to-cart">add to cart</button>'
+      }
+
+
     </div>
     </div>
   </div>

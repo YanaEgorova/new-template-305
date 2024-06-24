@@ -5,7 +5,7 @@ export const tableRowTemplate = (product) => {
   <td class="text product-table-img-box" >
   <div class="product-table-img"><img  src="${product.image}" alt=""></div>
    
-      <p>${product.name} ${product.ringSize ? "(Size " + product.ringSize + ")" : product.clothingSize ? "(Size " + product.clothingSize + ")" : ""}</p>
+     <p>${product.name} ${product.ringSize ? "(Size " + product.ringSize + ")" : product.clothingSize ? "(Size " + product.clothingSize + ")" : product.shoesSize ? "(Size " + product.shoesSize + ")" : ""}</p>
   </td>
 
 
